@@ -7,12 +7,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-class FabricaConexao {
+ public class FabricaConexao {
 	
-	public class FabricaConexao {
-		static final String url = "jdbc:postgresql://5432/threeway";
-		static final String usuario = "postegres";
-		static final String senha = "123456";
+		static final String url = "jdbc:postgresql://localhost:5432/threeway";
+		static final String usuario = "postgres";
+		static final String senha = "postgres";
+		
 		public static Connection getConexao() throws SQLException {
 			
 			try {
@@ -23,10 +23,5 @@ class FabricaConexao {
 				throw new SQLException (e.getMessage());
 			}
 		}
-	}
 
-	public static Connection getconexao() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
