@@ -13,7 +13,7 @@ import data.model.Livro;
 public class LivroDao implements Dao {
 
 	public List<Livro> listeLivro() {
-		List<Livro> Livros = new ArrayList<>();
+		List<Livro> Livros = new ArrayList<Livro>();
 		Connection conection = FabricaConexao.getConnection();
 		try {
 			PreparedStatement prepareStatement = conection.prepareStatement("select * from estoque");
