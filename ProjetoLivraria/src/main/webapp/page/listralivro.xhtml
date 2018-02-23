@@ -10,6 +10,10 @@ xmlns:ui="http://java.sun.com/jsf/facelets">
 		</ui:define>
 		
 <ui:define name="conteudo">
+<ui:repeat var="Livro" value="#{livroService.listeLivros()}">
+<h:outputLabel value="#{livro.titulo}">
+</h:outputLabel>
+</ui:repeat>
 	Lista de Livro
 	</ui:define>
 </ui:composition>
